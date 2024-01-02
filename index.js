@@ -4,7 +4,39 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = [
+const questions = [{
+    type: "input",
+    name: "title",
+    message: "What is the title of your project?"
+},
+{
+    type: "input",
+    name: "githubUserName",
+    message: "What is your github username?"
+},
+{
+    type: "input",
+    name: "email",
+    message: "What is your email address?"
+},
+{
+    type: "input",
+    name: "projectDescription",
+    message: "Please write a short description of your project: "
+},
+{
+    type: "input",
+    name: "dependencies",
+    message: "What command should be run to install dependencies?",
+    default: "npm i"
+},
+{
+    type: "list",
+    name: "license",
+    message: "Please select a license used for this project",
+    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"]
+    
+},
 
 ];
 
@@ -19,6 +51,8 @@ function writeToFile(readme, data) {
 
 // function to initialize program
 function init() {
+    inquirer
+    .prompt(questions)
 
 }
 
