@@ -6,19 +6,22 @@ function generateMarkdown(data) {
   ## Table of Contents
 
 - [Description](#description)
-- [Dependencies](#dependencies)
+- [Table Of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Contributing](#contributing)
+- [Dependencies](#dependencies)
+- [Tests](tests)
+- [Questions](questions)
 - [Author](#author)
 
 
+## Description
+${data.projectDescription}
 
-## Dependencies
-${data.dependencies}
 
+${data.features}
 
 ## Installation
 \`\`\`bash 
@@ -27,7 +30,15 @@ ${data.installation}
 
 
 ## Usage
+\`\`\`bash
 ${data.usage}
+\`\`\`
+
+
+
+## License
+
+This project is licensed under the [${data.license}]
 
 
 ## Contributing
@@ -37,13 +48,26 @@ to discuss what you would like to change or email me at ${data.email}.
 
 Please make sure to update tests as appropriate.
 
-## License
 
-This project is licensed under the [${data.license}]
+## Dependencies
 
-## Contact
+"npm i" should be used to install all dependencies. Dependencies for this project are:
+
+
+${data.dependencies}
+
+
+## Questions
 
 For questions or feedback, you can contact me at ${data.email} or visit my GitHub profile at [${data.githubUserName}](https://github.com/${data.githubUserName}).
+
+
+## Tests
+\`\`\`bash 
+${data.tests} 
+\`\`\`
+
+
 
 ## Author
 ${data.author}
