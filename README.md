@@ -4,6 +4,7 @@
   ## Table of Contents
 
 - [Description](#description)
+- [Walkthrough](#walkthrough)
 - [Table Of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,6 +21,10 @@ The Professional README Generator is a command-line application built to streaml
 
 
 With this README generator, you can easily input project information through a series of prompts, and the application dynamically generates a well-structured README.md file based on your responses. The generated README includes sections such as project description, installation instructions, usage guidelines, contribution details, testing procedures, licensing information, and contact details.
+
+## Walkthrough
+
+[App Walkthrough Video](https://drive.google.com/file/d/1lw0JE5ntkX0HakP2qyLqzv5XSBMB2Vxi/view?usp=sharing)
 
 ## Installation
 ```bash 
